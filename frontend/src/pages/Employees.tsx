@@ -97,7 +97,7 @@ export default function Employees() {
 
       console.log("Sending payload:", payload);
 
-      const res = await fetch("https://hrms-lite-backend-4m9y.onrender.com/api/attendance", {
+      const res = await fetch("https://hrms-lite-production-9a91.up.railway.app/api/attendance", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -138,7 +138,7 @@ export default function Employees() {
 
     try {
 
-      const res = await fetch("https://hrms-lite-backend-4m9y.onrender.com/api/attendance/all")
+      const res = await fetch("https://hrms-lite-production-9a91.up.railway.app/api/attendance/all")
 
       const data = await res.json()
 

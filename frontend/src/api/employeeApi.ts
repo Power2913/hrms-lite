@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "https://hrms-lite-backend-4m9y.onrender.com/api/employees";
+const API_BASE = "https://hrms-lite-production-9a91.up.railway.app/api/employees";
 
 export const getEmployees = () =>
   axios.get(`${API_BASE}?format=json`);

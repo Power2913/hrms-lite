@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = "http://127.0.0.1:8000/api/employees";
+const API_BASE = "https://hrms-lite-backend-4m9y.onrender.com/api/employees";
 
 export const getEmployees = () =>
   axios.get(`${API_BASE}?format=json`);

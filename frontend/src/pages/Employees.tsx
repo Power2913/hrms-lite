@@ -97,7 +97,7 @@ export default function Employees() {
 
       console.log("Sending payload:", payload);
 
-      const res = await fetch("http://127.0.0.1:8000/api/attendance", {
+      const res = await fetch("https://hrms-lite-backend-4m9y.onrender.com/api/attendance", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -138,7 +138,7 @@ export default function Employees() {
 
     try {
 
-      const res = await fetch("http://127.0.0.1:8000/api/attendance/all")
+      const res = await fetch("https://hrms-lite-backend-4m9y.onrender.com/api/attendance/all")
 
       const data = await res.json()
 

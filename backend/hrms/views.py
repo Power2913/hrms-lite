@@ -96,7 +96,8 @@ def employee_attendance(request, employee_id):
 @api_view(['GET'])
 def all_attendance(request):
 
-    records = Attendance.objects.all().order_by('-date')
+    # records = Attendance.objects.all().order_by('-date')
+    records = Attendance.objects.all()
 
     serializer = AttendanceSerializer(records, many=True)
 
